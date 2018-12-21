@@ -11,7 +11,6 @@ then
 fi
 
 # Get the current size of the flowfile
-#size=$(ls -l $1 | tr -s ' ' | cut -d ' ' -f 5)
 # Does not work on macos : one or more spaces before the size
 size=$(wc -c $1 | cut -d ' ' -f 1)
 
